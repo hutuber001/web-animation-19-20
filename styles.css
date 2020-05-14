@@ -1,0 +1,103 @@
+body {
+    background-color: #e6d184;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+h1, h2, h3, h4 {
+    font-family: avenir black;
+    color: black;
+    width: 5em;
+    position: absolute;
+
+}
+
+svg {
+    width: 40em;
+    margin-top: 5em;
+    margin-left: 5em;
+}
+
+#rechterbeen:hover {
+ animation: been 10s;
+}
+
+#linkerbeen:hover {
+    animation: been 10s;
+}
+
+
+@keyframes been {
+    from  {
+        transform: rotatez(0deg);
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+    }
+
+#ladderlinks:hover {
+    animation: ladder 2s;
+
+}
+
+@keyframes ladder {
+    from {
+        transform: scaleY(0);
+    }
+    to {
+        transform: scaleY(2);
+    }
+}
+
+
+
+
+svg {animation: fadeIn 1s ease}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/*bron:https://codepen.io/whusterj/pres/bdYKop*/
+svg {
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+
+}
+
+@keyframes floating {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(0, 15px); }
+    to   { transform: translate(0, -0px); }
+}
+
+#hoofd { }
+
+
+@media screen and (max-width: 35em) {
+    svg {
+        width: 60em;
+    }
+}
+
+@media screen and (min-width: 35em) {
+    svg {
+        width: 80em;
+    }
+}
+
+/*Schroeven - als je erop klikt ze verschuiven*/
+#schroefrechts2.1 {
+
+}
